@@ -13,7 +13,7 @@ if __name__ == "__main__":
     keyword = 'analyst'
     location = 'Canada'
     unwantedWordsList = ['senior', 'lead', 'sr', 'staff', 'manager']
-    get_jobs(keyword, location, unwantedWordsList)
+    getJobs(keyword, location, unwantedWordsList)
 ```
 
 Output:
