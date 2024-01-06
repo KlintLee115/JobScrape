@@ -1,5 +1,5 @@
-Download the file in a folder, then run "pip install requests bs4"
-Run the file in terminal/ commmand prompt to enable interactivity.
+Download the file, then run "pip install requests bs4" in your terminal or command line.
+After "pip install" is done, run the file in terminal/ commmand prompt to enable interactivity.
 
 If a company has different positions, only the first position will be outputted. This is to prevent duplicate results.
 
