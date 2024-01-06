@@ -1,12 +1,11 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
-def get_jobs(keyword, location):
+def getJobs(keyword, location, unwantedWordsList):
     url = f'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={keyword}&location={location}&start='
 
     idx = 0
     count = 0
-    unwantedWordsList = ['senior', 'lead', 'sr', 'staff', 'manager']
     company_set = set()
 
     while True:
@@ -32,6 +31,7 @@ def get_jobs(keyword, location):
             break
 
 if __name__ == "__main__":
-    keyword = 'network'
+    keyword = 'analyst'
     location = 'Canada'
-    get_jobs(keyword, location)
+    unwantedWordsList = ['senior', 'lead', 'sr', 'staff', 'manager']
+    getJobs(keyword, location, unwantedWordsList)
